@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="bdy">
+        <div class="sidebar">
+            <div class="filter">
+                <i class="fa-solid fa-bars"></i>
+                <p id="filterp">Filter</p>
+            </div>
+
+            <div class="checks">
+                <div class="mood">
+                    <p>Mood</p>
+                    <i class="fa fa-sort-desc mooddrop" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <div class="moodchecks">
+                        <input type="checkbox" id="mood1" name="option1" value="value1">
+                        <label for="mood1">Chill</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="mood2" name="option2" value="value2">
+                        <label for="mood2">Dramatic</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="mood3" name="option2" value="value2">
+                        <label for="mood3">happy</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="mood4" name="option2" value="value2">
+                        <label for="mood4">Sad</label>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="Genre">
+                    <p>Genre</p>
+                    <i class="fa fa-sort-desc genredrop" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <div class="genrechecks">
+                        <input type="checkbox" id="genre1" name="option1" value="value1">
+                        <label for="genre1">Chill</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="genre2" name="option2" value="value2">
+                        <label for="genre2">Dramatic</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="genre3" name="option2" value="value2">
+                        <label for="genre3">happy</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="genre4" name="option2" value="value2">
+                        <label for="genre4">Sad</label>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="art_ist">
+                    <p>Artist</p>
+                    <i class="fa fa-sort-desc art_istdrop" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <div class="art_istchecks">
+                        <input type="checkbox" id="art_ist1" name="option1" value="value1">
+                        <label for="art_ist1">Chill</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="art_ist2" name="option2" value="value2">
+                        <label for="art_ist2">Dramatic</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="art_ist3" name="option2" value="value2">
+                        <label for="art_ist3">happy</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="art_ist4" name="option2" value="value2">
+                        <label for="art_ist4">Sad</label>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main">
+            <div class="searchparent">
+                <div class="addedSearch">
+                    <input class="searchbar" type="text" placeholder=" Search Music or backsound">
+                    <button class="searchbtn" onclick="search()"><i class="fa fa-search"
+                            aria-hidden="true"></i></button>
+                </div>
+
+                <!-- <span
+                    class="material-symbols-outlined">
+                    search
+                </span> -->
+                <div class="parentdrops">
+                    <select class="drops">
+                        <option default>Popular</option>
+                        <option>Newest</option>
+                        <option>Relevant</option>
+                        <option>None</option>
+                    </select>
+                    <select class="drops">
+                        <option>Duration</option>
+                        <option>Newest</option>
+                        <option>Relevant</option>
+                        <option>None</option>
+                    </select>
+                    <select class="drops">
+                        <option>Vocal</option>
+                        <option>Newest</option>
+                        <option>Relevant</option>
+                        <option>None</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="music-parent">
+                <div class="music m1">
+                    <div class="music-detail">
+                        <p class="song">Sunny sunsite</p>
+                        <p class="artist">Andrain Brekerynia</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+
+
+                <div class="music m2">
+                    <div class="music-detail">
+                        <p class="song">Daylight</p>
+                        <p class="artist">David Kushner</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m3">
+                    <div class="music-detail">
+                        <p class="song">Believer</p>
+                        <p class="artist">Imagine Dragons</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m4">
+                    <div class="music-detail">
+                        <p class="song">Mocking Bird</p>
+                        <p class="artist">Eminem</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m5">
+                    <div class="music-detail">
+                        <p class="song">Eighteen</p>
+                        <p class="artist">Henry Moodie</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m6">
+                    <div class="music-detail">
+                        <p class="song">Day Dream</p>
+                        <p class="artist">Lily Meola</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m7">
+                    <div class="music-detail">
+                        <p class="song">Bones</p>
+                        <p class="artist">Imagine Dragons</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m8">
+                    <div class="music-detail">
+                        <p class="song">Mr. Forgettable</p>
+                        <p class="artist">David Kushner</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m9">
+                    <div class="music-detail">
+                        <p class="song">Dark paradise</p>
+                        <p class="artist">Lana Del Rey</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m10">
+                    <div class="music-detail">
+                        <p class="song">People You Know</p>
+                        <p class="artist">Selena Gomez</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m11">
+                    <div class="music-detail">
+                        <p class="song">Night Changes</p>
+                        <p class="artist">One Direction</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m12">
+                    <div class="music-detail">
+                        <p class="song">Another Love</p>
+                        <p class="artist">Tom Odell</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m13">
+                    <div class="music-detail">
+                        <p class="song">Fairytale</p>
+                        <p class="artist">Alexander Rybak</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m14">
+                    <div class="music-detail">
+                        <p class="song">Love Me Like You Do</p>
+                        <p class="artist">Ellie Goulding</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m15">
+                    <div class="music-detail">
+                        <p class="song">Bella Ciao</p>
+                        <p class="artist">manu Pilas</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m16">
+                    <div class="music-detail">
+                        <p class="song">Arcade</p>
+                        <p class="artist">Duncan Laurence</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m17">
+                    <div class="music-detail">
+                        <p class="song">I Wanna Die</p>
+                        <p class="artist">Nessa barrett</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m18">
+                    <div class="music-detail">
+                        <p class="song">Vampire</p>
+                        <p class="artist">Olivia Rodrigo</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m19">
+                    <div class="music-detail">
+                        <p class="song">Mercy</p>
+                        <p class="artist">Shawn Mendes</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m20">
+                    <div class="music-detail">
+                        <p class="song">All of Me</p>
+                        <p class="artist">John Legend</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m21">
+                    <div class="music-detail">
+                        <p class="song">Nothing</p>
+                        <p class="artist">Bruno Major</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m22">
+                    <div class="music-detail">
+                        <p class="song">Older</p>
+                        <p class="artist">Sasha Alex Sloan</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m23">
+                    <div class="music-detail">
+                        <p class="song">1000 Reasons</p>
+                        <p class="artist">Caleb Hearn</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+                <div class="music m24">
+                    <div class="music-detail">
+                        <p class="song">Take Me To Church</p>
+                        <p class="artist">Hozier</p>
+                        <hr>
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                </div>
+            </div>
+
+            <section class="artists">
+                <div class="artist-title">
+                    <h1 class="atitle"><i class="fa fa-user" aria-hidden="true"></i>Top Artists</h1>
+                </div>
+
+                <div class="Artists">
+                    <div class="Artist a1">
+                        <img src="./assests/artists/500x500-000000-80-0-0.jpg">
+                        <h1> Hans Zimmer</h1>
+                    </div>
+                    <div class="Artist a2">
+                        <img src="./assests/artists/david.webp">
+                        <h1>David Kushner </h1>
+                    </div>
+                    <div class="Artist a3">
+                        <img src="./assests/artists/justin.jpg">
+                        <h1>Justin Bieber</h1>
+                    </div>
+                    <div class="Artist a4">
+                        <img src="./assests/artists/michael.jpg">
+                        <h1>Michael Jackson</h1>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="playlists">
+                <div class="playlist-title">
+                    <h1 class="ptitle"><i class="fa fa-music" aria-hidden="true"></i>Top PlayLists</h1>
+                </div>
+
+                <div class="playlist">
+                    <div class="list l1">
+                        <img src="./assests/playlists/37i9dQZF1DZ06evNZVVBPG-default.jpg">
+                        <i class="fa fa-backward" aria-hidden="true"></i>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <i class="fa fa-forward" aria-hidden="true"></i>
+                    </div>
+                    <div class="list l2">
+                        <img src="./assests/playlists/37i9dQZF1DZ06evO3mWKYL-default.jpg">
+                        <i class="fa fa-backward" aria-hidden="true"></i>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <i class="fa fa-forward" aria-hidden="true"></i>
+                    </div>
+                    <div class="list l3">
+                        <img src="./assests/playlists/ab67706f0000000257246dfa8cbe38a322eca769.jpeg">
+                        <i class="fa fa-backward" aria-hidden="true"></i>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <i class="fa fa-forward" aria-hidden="true"></i>
+                    </div>
+                    <div class="list l4">
+                        <img src="./assests/playlists/ab67706f000000027cda1a881997b0bb1ca0eb92.jpeg">
+                        <i class="fa fa-backward" aria-hidden="true"></i>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <i class="fa fa-forward" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.17497180003!2d76.6572028756692!3d30.516091096070433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1724415181598!5m2!1sen!2sin"
+        width="70%" height="500" style="border:0; filter: invert(90%)" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+    <section class="footer">
+        <div class="ftr">
+            <div class="fabout">about
+                <div class="fabouttext">DumyMusic is the source for royalty free musicEvaluate your project with our
+                    diverse collection.
+                    Simplify your licencing process and unleash your creativity.Join us Today!</div>
+            </div>
+            <div class="fprod">Product
+                <div class="hover-underline">
+                    <p>Vocal Music</p>
+                </div>
+                <div class="hover-underline">
+                    <p>Instrumental</p>
+                </div>
+                <div class="hover-underline">
+                    <p>Listening</p>
+                </div>
+                <div class="hover-underline">
+                    <p>Category</p>
+                </div>
+            </div>
+            <div class="fsupport">support
+                <div class="hover-underline">
+                    <p>FAQ</p>
+                </div>
+                <div class="hover-underline">
+                    <p>Contact us</p>
+                </div>
+                <div class="hover-underline">
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="hover-underline">
+                    <p>Terms of Service</p>
+                </div>
+            </div>
+            <div class="fsocialmedia">social media
+                <div>For recent updates and news follow our social media feeds</div>
+                <div class="socialicons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-twitch"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i> AnmolTuteja</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(21, 26, 39, 255);
+    color: white;
+}
+
+.bdy {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+}
+
+.main {
+    width: 75%;
+    height: 100%;
+    /* background-color: #0d0914 */
+}
+
+.searchbar {
+    background-color: rgba(44, 50, 65, 255);
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+.drops {
+    background-color: rgba(21, 26, 39, 255);
+    width: 100px;
+    color: #fff;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 30px;
+}
+
+.searchparent {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parentdrops {
+    display: flex;
+    padding-right: 20px;
+}
+
+.music-parent {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.music {
+    height: 300px;
+    width: 230px;
+    background-color: rgba(44, 50, 65, 255);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    margin-right: 32px;
+}
+
+.music-detail {
+    height: 35%;
+    margin-top: 195px;
+    /* background-color: #BFBFBF; */
+    /* opacity: 60%; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /* text-shadow: none; */
+    /* Removes any blurring effect */
+    /* -webkit-font-smoothing: antialiased; */
+    /* For smooth text rendering */
+
+    /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(151, 155, 163, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125); */
+    background: rgba(21, 26, 39, 255, 0.7);
+    /* background: rgba(3, 10, 27, 0.25); */
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.m1 {
+    background: url(./assests/istockphoto-1362706206-1024x1024.jpg);
+    background-size: cover;
+}
+
+.m2 {
+    background: url(./assests/sir-simo-qwlmoSxkjZA-unsplash.jpg);
+    background-size: cover;
+}
+
+.m3 {
+    background: url(./assests/alexander-mass-Ct43u3ACM00-unsplash.jpg);
+    background-size: cover;
+}
+
+.m4 {
+    background: url(./assests//eric-muhr-mRVR66Yc_kY-unsplash.jpg);
+    background-size: cover;
+}
+
+.m5 {
+    background: url(./assests/steve-johnson-8FV2GkBYr1s-unsplash.jpg);
+    background-size: cover;
+}
+
+.m6 {
+    background: url(./assests/tom-gainor-rbDPLBr0Ut0-unsplash.jpg);
+    background-size: cover;
+}
+
+.m7 {
+    background: url(./assests/whosaynow-hWBU3vMpTkg-unsplash.jpg);
+    background-size: cover;
+}
+
+.m8 {
+    background: url(./assests/richard-stachmann-8WeN-p3KtKE-unsplash.jpg);
+    background-size: cover;
+}
+
+.m9 {
+    background: url(./assests//florian-hahn-PNZ8iGkYBJ8-unsplash.jpg);
+    background-size: cover;
+}
+
+.m10 {
+    background: url(./assests/francesco-ungaro-gDMg_T37Ufs-unsplash.jpg);
+    background-size: cover;
+}
+
+.m11 {
+    background: url(./assests/grigorii-shcheglov-a1cKK32kZgI-unsplash.jpg);
+    background-size: cover;
+}
+
+.m12 {
+    background: url(./assests/jaakko-perala-N-JbUUpmKzg-unsplash.jpg);
+    background-size: cover;
+}
+
+.m13 {
+    background: url(./assests/kevin-wang-dlRQ7xNDZj4-unsplash.jpg);
+    background-size: cover;
+}
+
+.m14 {
+    background: url(./assests//hans-ott-_gKKw8fIjDY-unsplash.jpg);
+    background-size: cover;
+}
+
+.m15 {
+    background: url(./assests/jean-carlo-emer-csZUCsZpDaE-unsplash.jpg);
+    background-size: cover;
+}
+
+.m16 {
+    background: url(./assests/sir-simo-8Xly6IqoBf4-unsplash.jpg);
+    background-size: cover;
+}
+
+.m17 {
+    background: url(./assests/anna-hlYFzT3A3-8-unsplash.jpg);
+    background-size: cover;
+}
+
+.m18 {
+    background: url(./assests/benjamin-chambon-QPInlTAwwLg-unsplash.jpg);
+    background-size: cover;
+}
+
+.m19 {
+    background: url(./assests/whosaynow-hWBU3vMpTkg-unsplash.jpg);
+    background-size: cover;
+}
+
+.m20 {
+    background: url(./assests/declan-sun-Ko2IWuJS2tI-unsplash.jpg);
+    background-size: cover;
+}
+
+.m21 {
+    background: url(./assests/single-earth-dyLpFpW7LR0-unsplash.jpg);
+    background-size: cover;
+}
+
+.m22 {
+    background: url(./assests/sir-simo-qwlmoSxkjZA-unsplash.jpg);
+    background-size: cover;
+}
+
+.m23 {
+    background: url(./assests/old-youth-29sudGmuzeo-unsplash.jpg);
+    background-size: cover;
+}
+
+.m24 {
+    background: url(./assests/paul-bill-N3Tw37olxyo-unsplash.jpg);
+    background-size: cover;
+}
+
+.song {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 580;
+    text-align: center;
+}
+
+.artist {
+    color: rgb(92, 91, 91);
+    font-weight: 580;
+    text-align: left;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fa-download {
+    color: #fff;
+    position: absolute;
+    bottom: 14px;
+    left: 12px;
+}
+
+.fa-heart {
+    color: #fff;
+    position: absolute;
+    bottom: 14px;
+    left: 45px;
+}
+
+.fa-heart:hover {
+    font-size: 25px;
+    color: red;
+}
+
+.fa-ellipsis-h {
+    color: #fff;
+    position: absolute;
+    bottom: 14px;
+    left: 80px;
+}
+
+.fa-circle-play {
+    color: #289220;
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    font-size: 30px;
+}
+
+hr {
+    border: none;
+    height: 0.8px;
+    background-color: rgb(92, 91, 91);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.filter {
+    margin-top: 205px;
+    display: flex;
+}
+
+.fa-bars {
+    margin-left: 50px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#filterp {
+    display: inline;
+    font-family: "Poppins", sans-serif;
+}
+
+.artists {
+    margin-top: 50px;
+}
+
+.artist-title {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+
+}
+
+.fa-user {
+    margin-right: 13px;
+}
+
+.Artists {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Artist {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 25rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.Artist img {
+    border-radius: 50%;
+    width: 50%;
+    margin: 5rem;
+}
+
+.Artist h1 {
+    /* letter-spacing: 0.2rem; */
+}
+
+.mood p {
+    display: inline;
+    padding: 10px;
+}
+
+.mood {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.moodchecks {
+    display: none;
+}
+
+.mooddrop:hover .moodchecks {
+    display: block;
+}
+
+.Genre {
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.Genre p {
+    display: inline;
+    padding: 10px;
+}
+
+.genrechecks {
+    display: none;
+}
+
+.genredrop:hover .genrechecks {
+    display: block;
+}
+
+.art_ist {
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.art_ist p {
+    display: inline;
+    padding: 10px;
+}
+
+.art_istchecks {
+    display: none;
+}
+
+.art_istdrop:hover .art_istchecks {
+    display: block;
+}
+
+/* .a1 {
+    background-image: url(./assests/artists/500x500-000000-80-0-0.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+} */
+
+.a1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.a1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assests/artists/500x500-000000-80-0-0.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.a2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.a2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assests/artists/david.webp);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.a3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.a3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assests/artists/justin.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.a4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.a4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assests/artists/michael.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.playlist-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.playlists h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.fa-music {
+    margin-right: 13px;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.list {
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-backward {
+    position: absolute;
+    bottom: 25px;
+    left: 120px;
+    font-size: 27px;
+}
+
+.fa-play {
+    position: absolute;
+    bottom: 25px;
+    left: 195px;
+    font-size: 27px;
+}
+
+.fa-forward {
+    position: absolute;
+    bottom: 25px;
+    right: 120px;
+    font-size: 27px;
+}
+
+.list img {
+    width: 70%;
+    height: 70%;
+}
+
+.l1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.l1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assests/playlists/37i9dQZF1DZ06evNZVVBPG-default.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.l2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.l2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assests/playlists/37i9dQZF1DZ06evO3mWKYL-default.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.l3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.l3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assests/playlists/ab67706f0000000257246dfa8cbe38a322eca769.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.l4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.l4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assests/playlists/ab67706f000000027cda1a881997b0bb1ca0eb92.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+iframe {
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+.addedSearch {
+    background-color: rgba(44, 50, 65, 255);
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.fa-search {
+    margin-right: 20px;
+}
+
+.searchbtn {
+    background-color: rgba(44, 50, 65, 255);
+    color: #fff;
+    border: 0;
+}
+
+
+.ftr {
+    background: #1D212E;
+    /* box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14px); */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    width: 100%;
+    bottom: 40px;
+}
+
+.fabout {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.fprod {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: grey;
+}
+
+.fsupport {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: grey;
+}
+
+.fsocialmedia {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: grey;
+}
+
+.fprod div {
+    color: rgb(226, 220, 220);
+    margin-top: 10px;
+}
+
+.fsupport div {
+    color: rgb(226, 220, 220);
+    margin-top: 10px;
+}
+
+.fsocialmedia div {
+    color: rgb(226, 220, 220);
+    margin-top: 10px;
+}
+
+.socialicons {
+    margin-top: 20px;
+}
+
+.socialicons i {
+    margin-right: 10px;
+}
+
+.fa-instagram:hover {
+    color: rgb(175, 34, 58);
+}
+
+.fa-twitter:hover {
+    color: rgb(82, 143, 181);
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-discord:hover {
+    color: rgb(128, 68, 184);
+}
+
+.fa-twitch:hover {
+    color: rgb(157, 112, 199);
+}
+
+.copyright {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.fabouttext {
+    color: grey;
+    margin-right: 40%;
+    margin-top: 20px;
+}
