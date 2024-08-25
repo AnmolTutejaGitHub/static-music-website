@@ -748,3 +748,38 @@ iframe {
     margin-right: 40%;
     margin-top: 20px;
 }
+
+.gemini {
+    margin-top: 80px;
+    margin-left: 30%;
+}
+
+textarea {
+    height: 400px;
+    width: 800px;
+    border-radius: 8px;
+    outline: none;
+    color: grey;
+}
+
+.ask {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.AI {
+    background-color: rgba(44, 50, 65, 255);
+    border: none;
+    outline: none;
+    width: 700px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    padding-left: 5px;
+}
+
+#AI_ask {
+    height: 40px;
+    width: 80px;
+}
