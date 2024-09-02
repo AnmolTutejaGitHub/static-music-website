@@ -106,4 +106,20 @@ function display(i) {
     });
 }
 
+/// music Play
+const play = document.querySelectorAll('.music-btn');
 
+for (let i = 0; i < play.length; i++) {
+    play[i].addEventListener('click', function () {
+        const audioPlayer = this.closest('.music-detail').querySelector('.audioPlayer');
+        if (audioPlayer.paused) {
+            this.classList.remove('fa-circle-play');
+            this.classList.add('fa-pause-circle');
+            audioPlayer.play();
+        } else {
+            this.classList.remove('fa-circle-pause');
+            this.classList.add('fa-circle-play');
+            audioPlayer.pause();
+        }
+    });
+}

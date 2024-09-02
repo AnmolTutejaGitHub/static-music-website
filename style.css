@@ -250,7 +250,8 @@ body {
     left: 80px;
 }
 
-.fa-circle-play {
+.fa-circle-play,
+.fa-pause-circle {
     color: #289220;
     position: absolute;
     bottom: 10px;
@@ -701,10 +702,6 @@ textarea {
     width: 5rem;
 }
 
-
-
-
-
 /* media queries */
 @media (max-width: 1024px) {
     .searchbar {
@@ -776,20 +773,23 @@ textarea {
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
-    background: #44475a;
+    /* background: #44475a; */
+    background-color: white;
+    ;
     padding: 3rem 0vw;
 
     & p {
+        color: rgb(99, 98, 98);
         padding: 0.25rem;
     }
 
     & p:hover {
-        color: #b0b0b0;
+        color: black;
     }
 
     & h3 {
         padding: 0.25rem;
-        color: #b0b0b0;
+        color: rgb(69, 67, 67);
     }
 }
 
@@ -797,6 +797,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    color: rgb(99, 98, 98);
 }
 
 
@@ -882,4 +883,168 @@ textarea {
     .searchbar {
         width: 70%;
     }
+}
+
+
+/* to add music bottom play button  */
+.music-play-progress {
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(44, 50, 65, 255);
+    z-index: 1000;
+    margin-top: 67vh;
+    display: flex;
+    gap: 5px;
+    justify-content: baseline;
+    align-items: flex-end;
+    display: none;
+}
+
+@media(max-width:900px) {
+    .fa-search {
+        display: none;
+        font-size: 0px;
+    }
+}
+
+
+.movies {
+    width: 92%;
+    padding: 20px;
+    padding-right: 8%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movies-box {
+    background-color: white;
+    color: rgb(69, 67, 67);
+    /* color: rgb(99, 98, 98); */
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 3% 5%;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movies-box img {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 80%;
+    max-width: 40%;
+    margin: 10px;
+}
+
+.movies-box.left {
+    flex-direction: row;
+}
+
+.movies-box.right {
+    flex-direction: row-reverse;
+}
+
+.line {
+    background-color: rgb(61, 60, 60);
+    ;
+    width: 10px;
+    margin: 10px;
+    height: 90%;
+    transition: width 0.2s ease;
+}
+
+.movies-box:hover .line {
+    width: 20px;
+    margin: 15px;
+}
+
+.movies-box:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn {
+    margin: 70px auto 0;
+    text-align: center;
+}
+
+.btn a:hover {
+    background-color: #000;
+    color: #fff
+}
+
+.btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.movies-box h4 {
+    font-weight: 600;
+}
+
+.movies-heading {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    ;
+}
+
+.anime-heading {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    ;
+
+}
+
+.anime-heading {
+    text-align: center;
+}
+
+.anime {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.anime div {
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+}
+
+.anime img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
+
+.anime img:hover {
+    transform: scale(1.1);
 }
