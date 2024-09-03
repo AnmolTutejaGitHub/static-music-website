@@ -1133,9 +1133,3 @@ textarea {
         gap: 5rem;
     }
 }
-
-@media(max-width:800px) {
-    .footer {
-        display: none;
-    }
-}
