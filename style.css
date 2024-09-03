@@ -313,7 +313,7 @@ hr {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     height: 25rem;
-    width: 25rem;
+    width: 23rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -611,6 +611,7 @@ hr {
 iframe {
     margin-top: 50px;
     margin-left: 15%;
+    height: 30vw;
 }
 
 .addedSearch {
@@ -670,7 +671,7 @@ iframe {
 }
 
 textarea {
-    height: 400px;
+    height: 30vw;
     width: 60%;
     border-radius: 8px;
     outline: none;
@@ -725,7 +726,7 @@ textarea {
     }
 }
 
-@media(max-width: 432px) {
+@media(max-width: 900px) {
     .addedSearch {
         display: none;
         align-items: center;
@@ -752,6 +753,10 @@ textarea {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .Genre {
+        display: none;
     }
 
     .Artist {
@@ -910,26 +915,29 @@ textarea {
 
 
 .movies {
-    width: 92%;
+    width: 75%;
     padding: 20px;
-    padding-right: 8%;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .movies-box {
     background-color: white;
-    color: rgb(69, 67, 67);
-    /* color: rgb(99, 98, 98); */
+    /* color: rgb(69, 67, 67); */
+    /* color: black; */
+    color: black;
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 85%;
     margin: 3% 5%;
     height: 50vh;
     border-radius: 10px;
     overflow: hidden;
+    padding: 2rem;
 }
 
 .movies-box img {
@@ -938,6 +946,29 @@ textarea {
     height: 80%;
     max-width: 40%;
     margin: 10px;
+}
+
+@media(max-width:500px) {
+    .movies-box {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .movies-box img {
+        max-width: 100%;
+    }
+
+    .movies-box p {
+        display: none;
+    }
+
+    .movies-box h4 {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
 }
 
 .movies-box.left {
@@ -1028,13 +1059,14 @@ textarea {
 
 .anime {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .anime div {
-    width: 20vw;
-    height: 20vw;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -1047,4 +1079,63 @@ textarea {
 
 .anime img:hover {
     transform: scale(1.1);
+}
+
+@media(max-width:1250px) {
+    .addedSearch {
+        display: none;
+    }
+}
+
+.parallax {
+    background-image: url("./assests/landing/istockphoto-1295114854-1024x1024.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:700px) {
+    .music-parent {
+        justify-content: center;
+    }
+
+    .playlists {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-left: 50px;
+    }
+
+    .movies {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .movies-box {
+        margin-left: 80px;
+        ;
+    }
+
+    .Artist {
+        margin-left: 50px;
+    }
+
+    /* .footer {
+        width: 60%;
+    } */
+
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .music-parent {
+        gap: 5rem;
+    }
+}
+
+@media(max-width:800px) {
+    .footer {
+        display: none;
+    }
 }
