@@ -20,7 +20,6 @@ body {
     background-color: rgba(21, 26, 39, 255);
     padding: 1.5rem 2rem;
     font-weight: 500;
-    /* position: fixed; */
     width: 100%;
     z-index: 1000;
     position: fixed;
@@ -61,7 +60,7 @@ body {
         left: 0;
         width: 70%;
         transition: 1s ease;
-        background-color: black;
+        background-color: white;
         height: 2px;
     }
 }
@@ -89,14 +88,6 @@ body {
     background-color: #f0f0f0;
 }
 
-.center-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    position: relative;
-}
-
 .explore-button {
     padding: 10px 20px;
     font-size: 16px;
@@ -113,10 +104,46 @@ body {
     color: white;
 }
 
-.explore-btn {
+.explore-button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 9999;
+}
+
+.parallax {
+    background-image: url("./assests/aleksandr-popov-DPspiXW2zWg-unsplash.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.parallax-content h1 {
+    font-size: 48px;
+}
+
+.parallax-content p {
+    position: absolute;
+    left: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media(max-width:1200px) {
+    .parallax-content p {
+        display: none;
+    }
 }
